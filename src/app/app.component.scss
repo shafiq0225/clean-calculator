@@ -1,0 +1,77 @@
+@import "src/styles.scss";
+
+.rows {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    .row-item {
+      padding: 0.9375rem;
+      cursor: pointer;
+      width: 3.75rem;
+      height: 3.75rem;
+      line-height: 1.875rem;
+      min-width: 3.75rem;
+      min-height: 3.75rem;
+      margin: 2px;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+}
+
+.calculator {
+  border: 0.5px solid $clr-secondary-800;
+  padding: 1.875rem;
+  border-radius: 1.875rem;
+  box-shadow: 8px 11px 5px $clr-neutral-200;
+  background: $clr-neutral-100;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background: $clr-red;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+}
+
+.align-end {
+  text-align: end;
+  padding: 0.3125rem 0.9375rem;
+  display: flex;
+
+  .text {
+    flex-grow: 1;
+    width: 0;
+    word-break: break-all;
+    min-height: 1.625rem;
+    line-height: 1.625rem;
+  }
+}
+
+.bg-secondary-600 {
+  color: $clr-neutral-100;
+}
+.bg-secondary-500:hover {
+  background-color: $clr-secondary-400;
+}
+
+.bg-secondary-600:hover {
+  background-color: $clr-secondary-700;
+}
+
+.bg-primary-400:hover {
+  background-color: $clr-primary-500;
+}
+
+.top-preview {
+  border: 1px solid $clr-secondary-900;
+  border-radius: 0.9375rem;
+  margin-bottom: 1.25rem;
+  padding: 0.3125rem;
+}

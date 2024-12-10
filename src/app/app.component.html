@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="calculator">
+    <div class="top-preview">
+      <div class="align-end">
+        <div class="text fs-500">{{ preView }}</div>
+      </div>
+      <div class="align-end">
+        <div class="text fs-500">= {{ answer }}</div>
+      </div>
+    </div>
+    <div class="rows">
+      <ng-container *ngFor="let buttonRow of buttonConfigs">
+        <div class="row">
+          <ng-container *ngFor="let button of buttonRow">
+            <div
+              class="{{ 'row-item noselect fs-250 ' + button.class }}"
+              (click)="onButtonClick(button.behavior)"
+            >
+              {{ button.displayText }}
+            </div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
